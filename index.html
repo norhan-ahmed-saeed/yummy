@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Yummy</title>
+</head>
+
+<body>
+
+    <div class="loading-screen position-fixed top-0 start-0 end-0 bottom-0 bg-black justify-content-center align-items-center">
+        <i class="fa-solid fa-spinner fa-5px"></i>
+    </div>
+    
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0">
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-3">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="showSearch(); closeNav()" class="py-3 position-relative cursor-pointer">Search</li>
+                    <li onclick="getareaa(); closeNav()" class="py-3 position-relative cursor-pointer">Area</li>
+                    <li onclick="getCategories(); closeNav()" class="py-3 position-relative cursor-pointer">Categories</li>
+                    <li onclick="getingredient(); closeNav()" class="py-3 position-relative cursor-pointer">Ingredients</li>
+                    <li onclick="showContacts(); closeNav()" class="py-3 position-relative cursor-pointer">Contact Us</li>
+                </ul>
+            </div>
+            <div class="end">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2024 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            
+                <img class="imag" src="image.png" alt="" >
+                <i class="fa-solid open-close-icon fa-align-justify fa-3x"></i>
+           
+            
+              </div>
+              
+              
+              
+        </div>
+    </div>
+
+    
+    <div class="container w-70" id="search">
+       
+    </div>
+
+    <div class="min-vh-100 position-relative">
+        <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        
+    
+        <div class="container">
+            <div class="row py-4 g-4 " id="Data">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="css/jquery-3.7.1.min.js"></script>
+    <script src="css/bootstrap.bundle.js"></script>
+    <script src="css/index.js"></script>
+</body>
+
+</html>
